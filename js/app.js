@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
       generateButton.textContent = "Generate";
 
       // Show the app-item div
-      appItem.style.display = "block";
+      appItem.style.display = "flex";
 
       // Set the app link (replace with actual link generation logic)
       const appId = Math.random().toString(36).substring(7);

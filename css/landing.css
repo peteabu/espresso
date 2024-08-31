@@ -1,64 +1,9 @@
-/* Root variables for colors, including P3 color space support */
-:root {
-    /* Color definitions */
-    --bg-color: #fafafa;
-    --bg-color-p3: color(display-p3 0.9804 0.9804 0.9804);
-    --black-secondary: #474645;
-    --black-secondary-p3: color(display-p3 0.2784 0.2745 0.2706);
-    --black-placeholder: #756f6f;
-    --black-placeholder-p3: color(display-p3 0.451 0.4353 0.4353);
-    --primary-color: #141414;
-    --primary-color-p3: color(display-p3 0.0784 0.0784 0.0784);
-    --white-full: #fff;
-    --white-full-p3: color(display-p3 1 1 1);
-    --stroke-color: rgba(71, 70, 69, 0.1);
-    --stroke-color-p3: color(display-p3 0.2784 0.2745 0.2706 / 0.1);
-
-    /* Common values */
-    --font-size-small: 0.75rem;
-    --font-size-medium: 0.875rem;
-    --border-radius-standard: 0.75rem;
-    --gap-standard: 1.25rem;
-}
-
-@font-face {
-    font-family: "Pretendard";
-    src: url("../assets/fonts/PretendardVariable.woff2") format("woff2");
-    font-weight: 100 900;
-    font-display: swap;
-}
-
-a {
-    margin: 0;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: "Pretendard", sans-serif;
-    font-weight: 400;
-    background: var(--bg-color-p3, var(--bg-color));
     display: flex;
     width: 100%;
     padding-block-start: 6.25rem;
     justify-content: center;
     align-items: center;
-}
-
-p {
-    color: var(--black-secondary-p3, var(--black-secondary));
-    line-height: 1.5;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    width: clamp(20rem, 90%, 25rem);
 }
 
 .heading {
@@ -77,63 +22,10 @@ p {
     width: 100%;
 }
 
-label {
-    color: var(--black-placeholder-p3, var(--black-placeholder));
-    font-size: var(--font-size-small);
-}
-
-.creator-form {
-    display: flex;
-    padding: var(--gap-standard);
-    flex-direction: column;
-    gap: var(--gap-standard);
-    border-radius: var(--border-radius-standard);
-    border: 1px solid var(--stroke-color-p3, var(--stroke-color));
-    background: var(--white-full-p3, var(--white-full));
-    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.04);
-}
-
 .form-heading {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-}
-
-.form-details {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap-standard);
-}
-
-.textarea {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-}
-
-textarea {
-    padding: 1rem;
-    height: 5rem;
-    font-family: inherit;
-    font-size: var(--font-size-medium);
-    border-radius: 0.5rem;
-    border: 1px solid var(--stroke-color-p3, var(--stroke-color));
-    background: var(--white-full-p3, var(--white-full));
-    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.04);
-}
-
-button {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    border: none;
-    border-radius: 2.125rem;
-    background: var(--primary-color-p3, var(--primary-color));
-    color: var(--white-full-p3, var(--white-full));
-    text-align: center;
-    font-size: var(--font-size-medium);
-    font-weight: 600;
-    line-height: 1rem;
-    cursor: pointer;
 }
 
 .modal {
@@ -161,28 +53,6 @@ button {
     display: block;
     margin-block: 10px;
     color: var(--primary-color-p3, var(--primary-color));
-}
-
-.link-container {
-    display: flex;
-    padding: 10px;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 8px;
-    border: 1px solid var(--stroke-color-p3, var(--stroke-color));
-    background: var(--white-full-p3, var(--white-full));
-    font-size: var(--font-size-medium);
-    height: 40px;
-}
-
-.linkbutton {
-    display: flex;
-    padding: 2px 6px;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 34px;
-    background: color(display-p3 0.956 0.9445 0.933, #f4f1ee);
-    font-size: var(--font-size-small);
 }
 
 @media (max-width: 425px) {
