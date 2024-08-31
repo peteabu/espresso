@@ -8,13 +8,16 @@
             content="Create an account on Espresso - your coffee companion app"
         />
         <title>Espresso - Create Account</title>
-        <link rel="stylesheet" href="Landing.css" />
-        <link rel="stylesheet" href="auth.css" />
+        <link rel="stylesheet" href="../css/landing.css" />
+        <link rel="stylesheet" href="../css/auth.css" />
     </head>
     <body>
         <div class="container">
             <header class="heading">
-                <img src="Images/logo_coffee.svg" alt="Espresso logo" />
+                <img
+                    src="../assets/images/logo_coffee.svg"
+                    alt="Espresso logo"
+                />
                 <div class="headingcontent">
                     <h1>Welcome</h1>
                     <p>Create an account on Espresso</p>
@@ -47,7 +50,7 @@
                 const emailButton =
                     document.getElementById("continueWithEmail");
                 emailButton.addEventListener("click", function () {
-                    window.location.href = "Dashboard.html";
+                    window.location.href = "dashboard.html";
                 });
             });
         </script>
