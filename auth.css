@@ -1,0 +1,61 @@
+:root {
+    /* Color definitions */
+    --bg-color: #fafafa;
+    --bg-color-p3: color(display-p3 0.9804 0.9804 0.9804);
+    --black-secondary: #474645;
+    --black-secondary-p3: color(display-p3 0.2784 0.2745 0.2706);
+    --black-placeholder: #756f6f;
+    --black-placeholder-p3: color(display-p3 0.451 0.4353 0.4353);
+    --primary-color: #141414;
+    --primary-color-p3: color(display-p3 0.0784 0.0784 0.0784);
+    --white-full: #fff;
+    --white-full-p3: color(display-p3 1 1 1);
+    --stroke-color: rgba(71, 70, 69, 0.1);
+    --stroke-color-p3: color(display-p3 0.2784 0.2745 0.2706 / 0.1);
+
+    /* Common values */
+    --font-size-small: 0.75rem;
+    --font-size-medium: 0.875rem;
+    --border-radius-standard: 0.75rem;
+    --gap-standard: 1.25rem;
+    --box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.04);
+    --box-shadow-p3: 0 2px 2px -1px color(display-p3 0 0 0 / 0.04);
+}
+
+.auth-form,
+.social {
+    display: flex;
+    padding: var(--gap-standard);
+    flex-direction: column;
+    gap: var(--gap-standard);
+    border-radius: var(--border-radius-standard);
+    background: var(--white-full-p3, var(--white-full));
+    box-shadow: var(--box-shadow-p3, var(--box-shadow));
+}
+
+.auth-form {
+    border: 1px solid var(--stroke-color-p3, var(--stroke-color));
+}
+
+.button-stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.social {
+    padding: 12px 27px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 38px;
+    border: 1px solid var(--black-placeholder-p3, var(--black-placeholder));
+    color: var(--primary-color-p3, var(--primary-color));
+}
+.inline-shade {
+    color: var(--black-placeholder);
+    color: var(--black-placeholder-p3);
+}

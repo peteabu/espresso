@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Espresso - Dashboard</title>
+        <link rel="stylesheet" href="Landing.css" />
+        <link rel="stylesheet" href="dashboard.css" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navside">
+                <img src="Images/user-circle.svg" alt="User profile" />
+                <p>peterogh94@gmail.com</p>
+            </div>
+            <div class="navside">
+                <button id="createAppBtn">Create app</button>
+                <img src="Images/log-out.svg" alt="Log out" />
+            </div>
+        </nav>
+        <div class="container">
+            <h3>Your apps</h3>
+            <div class="app-item">
+                <p>[App name]</p>
+                <div class="link-container">
+                    <a href="#" id="appLink" target="_blank">App Link</a>
+                    <div class="linkbutton">
+                        <p>open</p>
+                        <span
+                            ><img
+                                src="Images/arrow-up-right.svg"
+                                alt="Open app"
+                        /></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const createAppBtn = document.getElementById("createAppBtn");
+                createAppBtn.addEventListener("click", function () {
+                    window.location.href = "Creator.html";
+                });
+            });
+        </script>
+    </body>
+</html>
