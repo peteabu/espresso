@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Espresso</title>
+        <link rel="stylesheet" href="Landing.css" />
+        <link rel="stylesheet" href="creator.css" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="crumb">
+                <img src="Images/close-icon.svg" alt="Close icon" />
+                <p>Create app</p>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="creator-form">
+                <div class="form-heading">
+                    <h4>Describe your app</h4>
+                    <p>
+                        For now, Espresso is best used for generating simple
+                        apps.
+                    </p>
+                </div>
+                <form class="form-details" id="appForm">
+                    <div class="textarea">
+                        <label for="description">Enter app description</label>
+                        <textarea
+                            type="text"
+                            id="description"
+                            placeholder="A to-do list app"
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" id="generateButton">Generate</button>
+                </form>
+            </div>
+            <div class="app-item" style="display: none">
+                <h4>Here's your app link</h4>
+                <div class="link-container">
+                    <a href="#" id="appLink" target="_blank">App Link</a>
+                    <div class="linkbutton">
+                        <p>open</p>
+                        <span
+                            ><img
+                                src="Images/arrow-up-right.svg"
+                                alt="Open app"
+                        /></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
